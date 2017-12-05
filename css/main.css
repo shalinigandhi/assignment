@@ -20,10 +20,6 @@ ul li {
 html,
 body {
   font-family: 'Open Sans', sans-serif;
-  font-size: 62.5%;
-  min-height: 100vh;
-  width: 100%;
-  margin: 0 auto;
   color: #565a5c; }
   @media (min-width: 1080px) {
     html,
@@ -50,11 +46,47 @@ body {
     body {
       font-size: 7.2px; } }
 
-.container .view .title, .container .view .view-type {
-  font-size: 16px;
-  font-weight: 600;
-  color: #1a1a1a; }
-.container .view .date, .container .view .desc {
-  font-size: 13px; }
+.container {
+  padding: 20px; }
+  .container .view .title,
+  .container .view .view-type {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a; }
+  .container .view .view-type {
+    padding: 10px; }
+  .container .view .date,
+  .container .view .desc {
+    font-size: 13px;
+    display: inline-block;
+    padding-top: 5px; }
+  .container .view .blocks {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap; }
+    .container .view .blocks .block {
+      border: 1px solid #eee;
+      border-radius: 5px;
+      box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.2);
+      margin: 10px;
+      overflow: hidden; }
+      .container .view .blocks .block .image {
+        overflow: hidden;
+        width: 310px;
+        height: 200px; }
+        .container .view .blocks .block .image img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain; }
+      .container .view .blocks .block .content {
+        padding: 10px 20px; }
+    .container .view .blocks.grid-blocks .block {
+      width: 310px; }
+    .container .view .blocks.list-blocks {
+      flex-direction: column; }
+      .container .view .blocks.list-blocks .block {
+        display: flex;
+        align-items: center; }
 
 /*# sourceMappingURL=main.css.map */
