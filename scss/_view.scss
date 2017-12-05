@@ -1,0 +1,12 @@
+.container {
+    .view {
+        .title, .view-type {
+            font-size: 16px;
+            font-weight: 600;
+            color: $title-color;
+        }
+        .date, .desc {
+			font-size: 13px;
+        }
+    }
+}

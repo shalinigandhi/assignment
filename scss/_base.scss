@@ -1,4 +1,4 @@
-@import '_mixin.scss';
+@import '_responsive.scss';
 @import '_colors.scss';
 
 html {
@@ -18,7 +18,7 @@ a {
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
-    color: $white;
+    // color: $white;
 }
 
 ul li {
@@ -27,12 +27,12 @@ ul li {
 
 html,
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 62.5%;
     min-height: 100vh;
     width: 100%;
     margin: 0 auto;
-    color: $white;
+    color: $text-color;
 
     @include desktop {
         font-size: 10px;
