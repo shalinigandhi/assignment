@@ -1,5 +1,4 @@
 function fetchJSONFile(path, callback) {
-    debugger;
     var httpRequest = new XMLHttpRequest();
     httpRequest.onreadystatechange = function() {
         if (httpRequest.readyState === 4) {
@@ -17,6 +16,5 @@ function fetchJSONFile(path, callback) {
 //   it is available
 fetchJSONFile('js/data.json', function(data){
     // do something with your data
-    debugger;
     console.log(data);
 });
