@@ -9,35 +9,15 @@
 </head>
 <body>
 <div class="container">
-	<section class="view list-view">
+	<div class="choose-layout">
+		<p class="layout">Choose Layout :</p>
+		<button class="btn btn-grid" onclick="addLayout('grid')">Grid</button>
+		<button class="btn btn-list" onclick="addLayout('list')">List</button>
+	</div>
+	<section class="view grid-view">
 		<p class="view-type grid">Grid View</p>
 		<p class="view-type list">List View</p>
-		<div class="blocks">
-			<div class="block">
-				<div class="image"><img src="assets/maruti-suzuki-wagon-r-10-exterior-80318.jpg" alt=""></div>
-				<div class="content">
-					<p class="title">Uber and Maruti join hands to create safe drivers</p>
-					<span class="date">Sept 20, 2016 by CarWale Team</span>
-					<p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero quaerat minima enim reprehenderit, nostrum corporis autem quos ab beatae! Facere vero in nam optio, beatae numquam architecto voluptatibus velit natus?</p>
-				</div>
-			</div>
-			<div class="block">
-				<div class="image"><img src="assets/maruti-suzuki-wagon-r-10-exterior-80318.jpg" alt=""></div>
-				<div class="content">
-					<p class="title">Uber and Maruti join hands to create safe drivers</p>
-					<span class="date">Sept 20, 2016 by CarWale Team</span>
-					<p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero quaerat minima enim reprehenderit, nostrum corporis autem quos ab beatae! Facere vero in nam optio, beatae numquam architecto voluptatibus velit natus?</p>
-				</div>
-			</div>
-			<div class="block">
-				<div class="image"><img src="assets/maruti-suzuki-wagon-r-10-exterior-80318.jpg" alt=""></div>
-				<div class="content">
-					<p class="title">Uber and Maruti join hands to create safe drivers</p>
-					<span class="date">Sept 20, 2016 by CarWale Team</span>
-					<p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero quaerat minima enim reprehenderit, nostrum corporis autem quos ab beatae! Facere vero in nam optio, beatae numquam architecto voluptatibus velit natus?</p>
-				</div>
-			</div>
-		</div>
+		<div class="blocks"></div>
 	</section>
 </div>
 <script src="js/main.js"></script>

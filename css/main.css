@@ -48,23 +48,37 @@ body {
 
 .container {
   padding: 20px; }
+  .container .choose-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 0 10px;
+    border: 1px solid #eee;
+    width: 220px; }
+    .container .choose-layout button.btn {
+      padding: 2px 10px;
+      border: 1px solid #eee;
+      cursor: pointer; }
   .container .view .title,
   .container .view .view-type {
     font-size: 16px;
     font-weight: 600;
     color: #1a1a1a; }
   .container .view .view-type {
-    padding: 10px 0; }
+    padding: 10px;
+    padding-top: 20px;
+    display: none; }
   .container .view .date,
   .container .view .desc {
     font-size: 13px;
     display: inline-block;
     padding-top: 5px; }
   .container .view .blocks {
-    display: flex;
     justify-content: flex-start;
     align-items: center;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    display: none; }
     .container .view .blocks .block {
       border: 1px solid #eee;
       border-radius: 5px;
@@ -90,21 +104,24 @@ body {
         padding: 20px; }
   .container .view.grid-view .view-type.list {
     display: none; }
-  .container .view.grid-view .blocks .block {
-    width: 310px; }
-    @media (max-width: 767px) {
-      .container .view.grid-view .blocks .block {
-        width: 100%; } }
-    .container .view.grid-view .blocks .block .image {
-      width: 100%;
-      height: auto; }
-      .container .view.grid-view .blocks .block .image:before {
-        bottom: -8px; }
-    .container .view.grid-view .blocks .block .content .desc {
-      display: none; }
+  .container .view.grid-view .blocks {
+    display: flex; }
+    .container .view.grid-view .blocks .block {
+      width: 310px; }
+      @media (max-width: 767px) {
+        .container .view.grid-view .blocks .block {
+          width: 100%; } }
+      .container .view.grid-view .blocks .block .image {
+        width: 100%;
+        height: auto; }
+        .container .view.grid-view .blocks .block .image:before {
+          bottom: -8px; }
+      .container .view.grid-view .blocks .block .content .desc {
+        display: none; }
   .container .view.list-view .view-type.grid {
     display: none; }
   .container .view.list-view .blocks {
+    display: flex;
     flex-direction: column; }
     .container .view.list-view .blocks .block {
       display: flex;
