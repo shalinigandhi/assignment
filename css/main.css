@@ -151,7 +151,7 @@ body {
             height: auto; } }
         .container .view.list-view .blocks .block .image:before {
           left: -10px;
-          top: 15px; }
+          top: 25px; }
           @media (max-width: 919px) {
             .container .view.list-view .blocks .block .image:before {
               top: 35px; } }
