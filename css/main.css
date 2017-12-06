@@ -49,17 +49,21 @@ body {
 .container {
   padding: 20px; }
   .container .choose-layout {
-    display: flex;
-    justify-content: space-between;
+    display: inline-flex;
+    justify-content: flex-start;
     align-items: center;
     padding: 10px;
     margin: 0 10px;
-    border: 1px solid #eee;
-    width: 220px; }
+    border: 1px solid #eee; }
+    .container .choose-layout .layout {
+      color: #1a1a1a;
+      font-size: 13px; }
     .container .choose-layout button.btn {
       padding: 2px 10px;
       border: 1px solid #eee;
       cursor: pointer; }
+      .container .choose-layout button.btn.btn-grid {
+        margin: 0 10px; }
   .container .view .title,
   .container .view .view-type {
     font-size: 16px;
@@ -102,8 +106,10 @@ body {
           object-fit: contain; }
       .container .view .blocks .block .content {
         padding: 20px; }
-  .container .view.grid-view .view-type.list {
-    display: none; }
+  .container .view.grid-view .view-type {
+    display: block; }
+    .container .view.grid-view .view-type.list {
+      display: none; }
   .container .view.grid-view .blocks {
     display: flex; }
     .container .view.grid-view .blocks .block {
@@ -118,11 +124,14 @@ body {
           bottom: -8px; }
       .container .view.grid-view .blocks .block .content .desc {
         display: none; }
-  .container .view.list-view .view-type.grid {
-    display: none; }
+  .container .view.list-view .view-type {
+    display: block; }
+    .container .view.list-view .view-type.grid {
+      display: none; }
   .container .view.list-view .blocks {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    padding: 0 10px; }
     .container .view.list-view .blocks .block {
       display: flex;
       align-items: center;
