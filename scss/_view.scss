@@ -136,7 +136,8 @@
                         }
 
                         .image {
-                            width: 310px;
+                            min-width: 150px;
+                            width: 150px;
                             height: 200px;
 
                             @include mobileLarge {
